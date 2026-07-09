@@ -1,0 +1,12 @@
+node_modules/
+tmp/
+temporary screenshots/
+.claude/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+my tmp logo creation.png
+my tmp logo creation 2.png
+screencapture-buildabrand-wixstudio-tmpd-2026-07-02-01_46_01.png
+screencapture-dentalcareseattle-home-2026-07-02-01_55_51.png

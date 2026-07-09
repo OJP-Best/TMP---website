@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tuesday Market Dental Practice — Membership Dentistry in King's Lynn</title>
+<meta name="description" content="Tuesday Market Dental Practice is a plan-only dental practice in King's Lynn. Join Silver, Gold or Platinum membership for check-ups, hygiene and treatment discounts — no per-visit bills." />
+<link rel="icon" href="./assets/img/logo-badge.png" />
+<link rel="stylesheet" href="./assets/css/site.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: "#1A2B5D",
+          navyDeep: "#101B42",
+          cream: "#F4F1EE",
+          brass: "#A8875A",
+          brassLight: "#C9AC7E",
+          ink: "#22304F",
+          blue: "#1A2B5D",
+          blueLight: "#9AA5CC",
+        },
+        fontFamily: {
+          display: ["Fraunces", "serif"],
+          sans: ["Inter", "sans-serif"],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-cream text-ink antialiased">
+
+<!-- Fixed header stack: utility bar + primary nav -->
+<div class="fixed top-0 inset-x-0 z-50">
+  <div class="bg-navyDeep text-cream/70">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 h-9 flex items-center justify-between gap-6">
+      <p class="text-[0.68rem] sm:text-xs tracking-[0.12em] uppercase">Plan-only private practice — now welcoming new members</p>
+      <div class="flex items-center gap-4 text-[0.68rem] sm:text-xs">
+        <a href="tel:+441553773302" class="phone-number hidden sm:inline hover:text-cream transition-colors tracking-[0.06em]">01553 773302</a>
+        <span class="hidden sm:inline w-px h-3 bg-cream/20"></span>
+        <a href="#" aria-label="Instagram" class="hover:text-cream transition-colors">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="hover:text-cream transition-colors">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 8.5h2V5.3c-.35-.05-1.55-.15-2.95-.15-2.92 0-4.92 1.78-4.92 5.05V13H6.5v3.5h2.63V23h3.6v-6.5h2.73l.43-3.5h-3.16v-2.4c0-1.01.28-1.6 1.77-1.6z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header data-header class="bg-cream/95 backdrop-blur-sm transition-shadow duration-500">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 h-24 flex items-center justify-between">
+      <a href="index.html" class="flex items-center shrink-0" aria-label="Tuesday Market Dental Practice — home">
+        <img src="./assets/img/logo-horizontal.png" alt="Tuesday Market Dental Practice" class="h-14 sm:h-16 w-auto" />
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 font-medium text-sm">
+        <a href="index.html" class="nav-link active pb-1">Home</a>
+        <a href="about.html" class="nav-link pb-1">About</a>
+        <a href="services.html" class="nav-link pb-1">Services</a>
+        <a href="index.html#plans" class="nav-link pb-1">Plans</a>
+        <a href="index.html#testimonials" class="nav-link pb-1">Testimonials</a>
+        <a href="contact.html" class="nav-link pb-1">Contact</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-6">
+        <a href="tel:+441553773302" class="phone-number text-sm font-medium text-navy/80 hover:text-navy transition-colors">01553 773302</a>
+        <a href="index.html#plans" class="btn btn-primary">View Membership Plans</a>
+      </div>
+
+      <button data-nav-toggle aria-expanded="false" aria-label="Toggle menu" class="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-[5px] group">
+        <span class="block w-6 h-px bg-navy transition-transform duration-300 group-aria-expanded:translate-y-[6px] group-aria-expanded:rotate-45"></span>
+        <span class="block w-6 h-px bg-navy transition-opacity duration-300 group-aria-expanded:opacity-0"></span>
+        <span class="block w-6 h-px bg-navy transition-transform duration-300 group-aria-expanded:-translate-y-[6px] group-aria-expanded:-rotate-45"></span>
+      </button>
+    </div>
+
+    <div data-mobile-nav class="mobile-nav lg:hidden absolute top-24 inset-x-0 bg-cream border-t border-navy/10 shadow-navy-md">
+      <nav class="flex flex-col px-6 py-6 gap-5 text-base font-medium">
+        <a href="index.html" class="text-navy">Home</a>
+        <a href="about.html" class="text-navy/80">About</a>
+        <a href="services.html" class="text-navy/80">Services</a>
+        <a href="index.html#plans" class="text-navy/80">Plans</a>
+        <a href="index.html#testimonials" class="text-navy/80">Testimonials</a>
+        <a href="contact.html" class="text-navy/80">Contact</a>
+        <a href="index.html#plans" class="btn btn-primary mt-2 justify-center">View Membership Plans</a>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden pt-44 pb-20 lg:pt-52 lg:pb-24 mesh-bg-hero">
+    <img src="./assets/img/logo-badge.png" alt="" aria-hidden="true" class="pointer-events-none select-none absolute -right-36 -top-36 w-[38rem] max-w-none opacity-[0.05]" />
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center relative z-10">
+      <div class="lg:col-span-6 relative z-10">
+        <p class="divider-flourish text-blue text-xs tracking-[0.3em] uppercase font-medium mb-6 max-w-[16rem]">
+          <span>King's Lynn, Norfolk</span>
+        </p>
+        <h1 class="font-display text-[2.75rem] leading-[1.05] -tracking-[0.02em] text-navy sm:text-6xl lg:text-[3.75rem]">
+          The Best Dentistry — Every Time
+        </h1>
+        <p class="mt-7 text-lg leading-[1.7] text-ink/70 max-w-lg">
+          Led by Dr David Best and our experienced team, we combine modern techniques with a genuinely caring approach — dedicated to delivering exceptional dental care tailored to you, because your smile deserves nothing less.
+        </p>
+        <p class="mt-6 inline-flex items-center gap-2 rounded-full bg-blue px-4 py-2 text-xs sm:text-sm text-white font-medium tracking-wide shadow-[0_8px_20px_-6px_rgba(26,43,93,0.5)]">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" class="shrink-0"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Every check-up includes a full oral health &amp; cancer screening
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a href="index.html#plans" class="btn btn-blue">View Membership Plans</a>
+          <a href="services.html" class="btn btn-outline-navy">Explore our services</a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 relative">
+        <div class="hidden sm:block absolute -inset-6 lg:-inset-8 bg-gradient-to-br from-blue/15 via-blue/5 to-transparent rounded-[3rem] rotate-2"></div>
+        <div class="relative rounded-[2.5rem] overflow-hidden ring-4 ring-white shadow-[0_4px_8px_rgba(26,43,93,0.12),0_32px_64px_-16px_rgba(26,43,93,0.35)] aspect-[4/5] max-w-md mx-auto lg:ml-auto lg:mr-0 z-10">
+          <img src="./assets/img/tech-diagnostics-2.jpg" alt="Advanced digital X-ray imaging in use at Tuesday Market Dental Practice" class="w-full h-full object-cover" loading="eager" />
+          <div class="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-navyDeep/90 via-navyDeep/25 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6">
+            <p class="text-cream font-display text-lg leading-snug">Advanced digital diagnostics</p>
+            <p class="text-cream/70 text-xs mt-1 tracking-wide">In-house imaging for faster, more accurate care</p>
+          </div>
+        </div>
+        <div class="hidden sm:flex absolute -top-6 -left-6 lg:-left-10 items-center gap-4 bg-white rounded-2xl shadow-navy-lg ring-1 ring-navy/5 px-5 py-4 max-w-[15rem] z-20">
+          <span class="font-display text-3xl text-blue"><span data-count-to="21">0</span></span>
+          <span class="text-xs leading-snug text-ink/70">years caring for smiles across West Norfolk</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#plans" aria-label="Scroll to membership plans" class="hidden lg:flex scroll-cue absolute bottom-6 left-6 lg:left-10 z-20 w-9 h-9 rounded-full items-center justify-center text-blue ring-1 ring-blue/25 bg-white/80 backdrop-blur-sm hover:ring-blue/50 transition-shadow">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
+    <svg class="absolute bottom-0 left-0 w-full text-blue" viewBox="0 0 1440 90" fill="none" preserveAspectRatio="none" style="height: 70px" aria-hidden="true">
+      <path d="M0 46C240 90 480 6 720 26C960 46 1200 96 1440 46V90H0V46Z" fill="currentColor"/>
+    </svg>
+  </section>
+
+  <!-- Credential marquee -->
+  <section class="py-5 overflow-hidden bg-blue relative">
+    <div class="marquee-fade">
+    <div class="marquee-track text-white text-sm font-semibold tracking-wide">
+      <div class="flex items-center shrink-0">
+        <span class="flex items-center gap-16 pr-16">
+          <span>GDC-registered dentists</span>
+          <span class="text-white/40">•</span>
+          <span>Same-day emergency appointments for members</span>
+          <span class="text-white/40">•</span>
+          <span>Membership plans from £14.99/month</span>
+          <span class="text-white/40">•</span>
+          <span>Rated 4.9★ by our members</span>
+          <span class="text-white/40">•</span>
+          <span>Fully wheelchair accessible</span>
+          <span class="text-white/40">•</span>
+        </span>
+        <span class="flex items-center gap-16 pr-16" aria-hidden="true">
+          <span>GDC-registered dentists</span>
+          <span class="text-white/40">•</span>
+          <span>Same-day emergency appointments for members</span>
+          <span class="text-white/40">•</span>
+          <span>Membership plans from £14.99/month</span>
+          <span class="text-white/40">•</span>
+          <span>Rated 4.9★ by our members</span>
+          <span class="text-white/40">•</span>
+          <span>Fully wheelchair accessible</span>
+          <span class="text-white/40">•</span>
+        </span>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="relative py-14 lg:py-20 mesh-bg-light overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+      <div class="max-w-2xl reveal">
+        <p class="divider-flourish text-blue text-xs tracking-[0.3em] uppercase font-medium mb-5 max-w-[13rem]"><span>Why patients choose us</span></p>
+        <h2 class="font-display text-4xl lg:text-5xl -tracking-[0.02em] text-navy">Gentle, modern dentistry — without the wait</h2>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-6">
+        <div class="glass-card reveal p-8">
+          <svg width="32" height="32" viewBox="0 0 34 34" fill="none" class="text-blue"><circle cx="17" cy="17" r="16" stroke="currentColor" stroke-width="1.4"/><path d="M17 9v8l6 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          <h3 class="font-display text-xl text-navy mt-5">Tight schedule? No worries</h3>
+          <p class="mt-3 text-ink/75 leading-[1.7]">Flexible scheduling and Saturday appointments, plus same-day emergency slots for members who call before 11am.</p>
+        </div>
+        <div class="glass-card reveal p-8">
+          <svg width="32" height="32" viewBox="0 0 34 34" fill="none" class="text-blue"><rect x="6" y="6" width="22" height="22" rx="4" stroke="currentColor" stroke-width="1.4"/><path d="M12 17h10M17 12v10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          <h3 class="font-display text-xl text-navy mt-5">Precision tools, gentle hands</h3>
+          <p class="mt-3 text-ink/75 leading-[1.7]">Digital scanning and modern imaging mean fewer surprises and treatment plans you can actually see.</p>
+        </div>
+        <div class="glass-card reveal p-8">
+          <svg width="32" height="32" viewBox="0 0 34 34" fill="none" class="text-blue"><path d="M6 17c0-6 5-11 11-11s11 5 11 11-5 11-11 11c-2 0-3.8-.5-5.4-1.4L6 28l1.4-5.6C6.5 20.8 6 19 6 17z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <h3 class="font-display text-xl text-navy mt-5">Smiles, without the stress</h3>
+          <p class="mt-3 text-ink/75 leading-[1.7]">From your first call to your last check-up, our team genuinely cares about how you feel — we take the time to listen, and help nervous patients feel truly at ease.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-14 lg:py-16 navy-atmosphere grain relative overflow-hidden">
+    <img src="./assets/img/logo-badge.png" alt="" aria-hidden="true" class="pointer-events-none select-none absolute -left-24 -bottom-24 w-[26rem] max-w-none opacity-[0.05]" style="filter: brightness(0) invert(1);" />
+    <div class="max-w-6xl mx-auto px-6 lg:px-10 relative z-10">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10 text-center">
+        <div class="reveal">
+          <p class="font-display text-4xl sm:text-5xl text-cream"><span data-count-to="21">0</span><span class="text-blueLight text-2xl sm:text-3xl">yrs</span></p>
+          <p class="mt-2 text-xs tracking-[0.15em] uppercase text-cream/50">Caring for West Norfolk</p>
+        </div>
+        <div class="reveal">
+          <p class="font-display text-4xl sm:text-5xl text-cream"><span data-count-to="1000">0</span><span class="text-blueLight text-2xl sm:text-3xl">+</span></p>
+          <p class="mt-2 text-xs tracking-[0.15em] uppercase text-cream/50">Patients looked after</p>
+        </div>
+        <div class="reveal">
+          <p class="font-display text-4xl sm:text-5xl text-cream"><span data-count-to="4.9">0</span><span class="text-blueLight text-2xl sm:text-3xl">★</span></p>
+          <p class="mt-2 text-xs tracking-[0.15em] uppercase text-cream/50">Average patient rating</p>
+        </div>
+        <div class="reveal">
+          <p class="font-display text-4xl sm:text-5xl text-cream"><span data-count-to="6">0</span></p>
+          <p class="mt-2 text-xs tracking-[0.15em] uppercase text-cream/50">Dedicated team members</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans -->
+  <section id="plans" class="py-16 lg:py-24 bg-white scroll-mt-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="max-w-2xl reveal">
+        <p class="divider-flourish text-blue text-xs tracking-[0.3em] uppercase font-medium mb-5 max-w-[14rem]"><span>Membership plans</span></p>
+        <h2 class="font-display text-4xl lg:text-5xl -tracking-[0.02em] text-navy">A plan-only practice, by design</h2>
+        <p class="mt-5 text-ink/75 leading-[1.7]">We don't do one-off, pay-per-visit dentistry — we'd rather build a lasting, caring relationship with you than see you once and hope for the best. Every patient joins one of three simple monthly memberships, so the care you need is always covered, and you're never left worrying about a surprise bill.</p>
+      </div>
+
+      <div class="mt-14 grid lg:grid-cols-3 gap-6 items-stretch">
+
+        <!-- Silver -->
+        <div class="glass-card reveal p-8 flex flex-col">
+          <p class="text-xs tracking-[0.2em] uppercase text-blue font-semibold">Silver</p>
+          <p class="mt-3 font-display text-4xl text-navy">£14.99<span class="text-base font-sans font-normal text-ink/50">/month</span></p>
+          <p class="mt-2 text-sm text-ink/60">Essential preventative care</p>
+          <ul class="mt-6 space-y-3 text-sm text-ink/75 flex-1">
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-blue"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>1 dental check-up a year</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-blue"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>1 hygienist visit a year</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-blue"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>10% off all further treatment</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-blue"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Worldwide dental accident cover</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-blue"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Standard appointment booking</span></li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-navy mt-8 justify-center">Join Silver</a>
+        </div>
+
+        <!-- Gold -->
+        <div class="reveal p-8 flex flex-col rounded-[1.5rem] bg-navy text-cream relative overflow-hidden shadow-navy-lg lg:-translate-y-4">
+          <span class="absolute top-0 right-0 bg-brass text-navyDeep text-[0.65rem] font-semibold tracking-[0.1em] uppercase px-4 py-1.5 rounded-bl-xl">Most popular</span>
+          <p class="text-xs tracking-[0.2em] uppercase text-brassLight font-semibold">Gold</p>
+          <p class="mt-3 font-display text-4xl text-cream">£24.99<span class="text-base font-sans font-normal text-cream/50">/month</span></p>
+          <p class="mt-2 text-sm text-cream/60">Complete family cover</p>
+          <ul class="mt-6 space-y-3 text-sm text-cream/80 flex-1">
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-brassLight"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>2 dental check-ups a year</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-brassLight"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>2 hygienist visits a year</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-brassLight"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>15% off all further treatment</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-brassLight"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Priority booking within 48 hours</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-brassLight"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>1 emergency appointment included</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-brassLight"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Worldwide dental accident cover</span></li>
+          </ul>
+          <a href="contact.html" class="btn btn-light mt-8 justify-center">Join Gold</a>
+        </div>
+
+        <!-- Platinum -->
+        <div class="glass-card reveal p-8 flex flex-col">
+          <p class="text-xs tracking-[0.2em] uppercase text-blue font-semibold">Platinum</p>
+          <p class="mt-3 font-display text-4xl text-navy">£37.99<span class="text-base font-sans font-normal text-ink/50">/month</span></p>
+          <p class="mt-2 text-sm text-ink/60">The complete, unhurried experience</p>
+          <ul class="mt-6 space-y-3 text-sm text-ink/75 flex-1">
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-blue"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>2 dental check-ups a year</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-blue"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>4 hygienist visits a year</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-blue"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>20% off all further treatment, including cosmetic</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-blue"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Same-day emergency priority</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-blue"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Annual smile assessment &amp; whitening touch-up</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-blue"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Direct line to the practice manager</span></li>
+            <li class="flex gap-2.5"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" class="shrink-0 mt-0.5 text-blue"><path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Worldwide dental accident cover</span></li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-navy mt-8 justify-center">Join Platinum</a>
+        </div>
+      </div>
+      <p class="mt-8 text-center text-sm text-ink/50 reveal">All plans are billed monthly with no long-term tie-in. Family and multi-member discounts available on request.</p>
+    </div>
+  </section>
+
+  <!-- Services teaser -->
+  <section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="max-w-2xl reveal">
+        <p class="divider-flourish text-blue text-xs tracking-[0.3em] uppercase font-medium mb-5 max-w-[10rem]"><span>Care, tailored</span></p>
+        <h2 class="font-display text-4xl lg:text-5xl -tracking-[0.02em] text-navy">How we look after your smile</h2>
+        <p class="mt-4 text-ink/60 max-w-xl">Every treatment area below is looked after as part of your membership — because your care shouldn't come with a separate invoice, or a second thought.</p>
+      </div>
+
+      <div class="mt-16 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <article class="reveal card-lift group rounded-3xl p-9 bg-navy text-cream relative overflow-hidden">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" class="text-blueLight"><path d="M20 6c-4 0-6 2.2-9 2.2-3.3 0-5 2.6-5 6.4 0 6.3 2.4 17.4 6 17.4 2.4 0 2.6-4.6 5-4.6s2.6 4.6 5 4.6c3.6 0 6-11.1 6-17.4 0-3.8-1.7-6.4-5-6.4-3 0-5-2.2-9-2.2z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <h3 class="font-display text-2xl mt-8">General Dentistry</h3>
+          <p class="mt-3 text-cream/70 leading-[1.7]">Check-ups, hygiene visits and preventative care that keeps small issues from becoming big ones — delivered without the rush.</p>
+          <a href="services.html#general" class="inline-flex items-center gap-2 mt-6 text-sm font-semibold text-blueLight">Learn more <span class="transition-transform group-hover:translate-x-1">→</span></a>
+        </article>
+
+        <article class="reveal card-lift group rounded-3xl p-9 bg-cream text-navy border border-navy/10 relative overflow-hidden">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" class="text-blue"><path d="M12 8l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M27 20l1.6 4 4 1.6-4 1.6-1.6 4-1.6-4-4-1.6 4-1.6 1.6-4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <h3 class="font-display text-2xl mt-8">Cosmetic Dentistry</h3>
+          <p class="mt-3 text-ink/70 leading-[1.7]">Whitening, veneers and clear aligners, planned around the smile you actually want — natural first, dramatic if you'd like.</p>
+          <a href="services.html#cosmetic" class="inline-flex items-center gap-2 mt-6 text-sm font-semibold text-navy">Learn more <span class="transition-transform group-hover:translate-x-1">→</span></a>
+        </article>
+
+        <article class="reveal card-lift group rounded-3xl p-9 bg-navy text-cream relative overflow-hidden">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" class="text-blueLight"><path d="M13 11c0-3.3 3.1-6 7-6s7 2.7 7 6c0 3.3-1.8 6.4-2.8 9.4a1 1 0 01-.95.7h-6.5a1 1 0 01-.95-.7C14.8 17.4 13 14.3 13 11z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><line x1="20" y1="21" x2="20" y2="33" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><line x1="15.5" y1="24.5" x2="24.5" y2="24.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="16.5" y1="28" x2="23.5" y2="28" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="17.5" y1="31.5" x2="22.5" y2="31.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          <h3 class="font-display text-2xl mt-8">Restorative &amp; Implants</h3>
+          <p class="mt-3 text-cream/70 leading-[1.7]">Dental implants, crowns, bridges and full reconstructions — long-term, advanced solutions when your smile needs more than the everyday essentials.</p>
+          <a href="services.html#restorative" class="inline-flex items-center gap-2 mt-6 text-sm font-semibold text-blueLight">Learn more <span class="transition-transform group-hover:translate-x-1">→</span></a>
+        </article>
+
+        <article class="reveal card-lift group rounded-3xl p-9 bg-cream text-navy border border-navy/10 relative overflow-hidden">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" class="text-blue"><path d="M22 4L9 22h8l-3 14 16-20h-9l1-12z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+          <h3 class="font-display text-2xl mt-8">Emergency Appointments</h3>
+          <p class="mt-3 text-ink/70 leading-[1.7]">Toothache, breakages or a knock to the mouth — members can call before 11am and we'll do everything we can to see you the same day.</p>
+          <a href="services.html#emergency" class="inline-flex items-center gap-2 mt-6 text-sm font-semibold text-navy">Learn more <span class="transition-transform group-hover:translate-x-1">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About teaser -->
+  <section class="relative py-16 lg:py-24 mesh-bg-light overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center reveal relative z-10">
+      <p class="divider-flourish text-blue text-xs tracking-[0.3em] uppercase font-medium mb-6 justify-center"><span>Meet the team</span></p>
+      <blockquote class="font-display text-2xl sm:text-3xl lg:text-[2.5rem] -tracking-[0.01em] text-navy leading-[1.3]">
+        "I bring precision to every procedure and patience to every patient — because skill without care isn't the kind of dentistry I believe in."
+      </blockquote>
+      <p class="mt-6 text-ink/55 text-sm tracking-[0.08em] uppercase">Dr. David Best — Practice Owner &amp; Lead Dentist</p>
+      <a href="about.html" class="btn btn-outline-navy mt-9 inline-flex">Meet the whole team</a>
+    </div>
+  </section>
+
+  <!-- Trusted & accredited -->
+  <section class="py-12 lg:py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center">
+      <p class="divider-flourish text-blue text-xs tracking-[0.3em] uppercase font-medium mb-8 justify-center"><span>Trusted &amp; accredited</span></p>
+      <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-navy/45 text-xs sm:text-sm font-medium tracking-[0.1em] uppercase">
+        <span>GDC Registered</span>
+        <span class="text-navy/20">•</span>
+        <span>BDA Member</span>
+        <span class="text-navy/20">•</span>
+        <span>Invisalign Provider</span>
+        <span class="text-navy/20">•</span>
+        <span>In-House Membership Plans</span>
+        <span class="text-navy/20">•</span>
+        <span>CQC Registered</span>
+        <span class="text-navy/20">•</span>
+        <span>STA Anxiety-Free Care</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner brands marquee -->
+  <section class="pt-2 pb-5 lg:pb-6 bg-white overflow-hidden">
+    <p class="text-center text-xs tracking-[0.2em] uppercase text-ink/40 mb-4">Trusted brands we work with</p>
+    <div class="py-5 overflow-hidden bg-navy">
+      <div class="marquee-fade">
+        <div class="marquee-track text-white text-sm font-semibold tracking-wide" style="animation-duration: 64s;">
+          <div class="flex items-center shrink-0">
+            <span class="flex items-center gap-16 pr-16">
+              <span>Philips Sonicare</span>
+              <span class="text-white/40">•</span>
+              <span>Oral-B</span>
+              <span class="text-white/40">•</span>
+              <span>Philips Zoom!</span>
+              <span class="text-white/40">•</span>
+              <span>Invisalign</span>
+              <span class="text-white/40">•</span>
+              <span>Colgate</span>
+              <span class="text-white/40">•</span>
+              <span>Philips Sonicare</span>
+              <span class="text-white/40">•</span>
+              <span>Oral-B</span>
+              <span class="text-white/40">•</span>
+              <span>Philips Zoom!</span>
+              <span class="text-white/40">•</span>
+              <span>Invisalign</span>
+              <span class="text-white/40">•</span>
+              <span>Colgate</span>
+              <span class="text-white/40">•</span>
+              <span>Philips Sonicare</span>
+              <span class="text-white/40">•</span>
+              <span>Oral-B</span>
+              <span class="text-white/40">•</span>
+              <span>Philips Zoom!</span>
+              <span class="text-white/40">•</span>
+              <span>Invisalign</span>
+              <span class="text-white/40">•</span>
+              <span>Colgate</span>
+              <span class="text-white/40">•</span>
+            </span>
+            <span class="flex items-center gap-16 pr-16" aria-hidden="true">
+              <span>Philips Sonicare</span>
+              <span class="text-white/40">•</span>
+              <span>Oral-B</span>
+              <span class="text-white/40">•</span>
+              <span>Philips Zoom!</span>
+              <span class="text-white/40">•</span>
+              <span>Invisalign</span>
+              <span class="text-white/40">•</span>
+              <span>Colgate</span>
+              <span class="text-white/40">•</span>
+              <span>Philips Sonicare</span>
+              <span class="text-white/40">•</span>
+              <span>Oral-B</span>
+              <span class="text-white/40">•</span>
+              <span>Philips Zoom!</span>
+              <span class="text-white/40">•</span>
+              <span>Invisalign</span>
+              <span class="text-white/40">•</span>
+              <span>Colgate</span>
+              <span class="text-white/40">•</span>
+              <span>Philips Sonicare</span>
+              <span class="text-white/40">•</span>
+              <span>Oral-B</span>
+              <span class="text-white/40">•</span>
+              <span>Philips Zoom!</span>
+              <span class="text-white/40">•</span>
+              <span>Invisalign</span>
+              <span class="text-white/40">•</span>
+              <span>Colgate</span>
+              <span class="text-white/40">•</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 lg:py-24 navy-atmosphere grain relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6 lg:px-10 relative z-10">
+      <div class="text-center reveal">
+        <div class="flex items-center justify-center -space-x-3 mb-8">
+          <div class="w-11 h-11 rounded-full ring-2 ring-navy bg-blueLight flex items-center justify-center text-navy text-xs font-semibold">SH</div>
+          <div class="w-11 h-11 rounded-full ring-2 ring-navy bg-blue flex items-center justify-center text-cream text-xs font-semibold">MT</div>
+          <div class="w-11 h-11 rounded-full ring-2 ring-navy bg-navyDeep flex items-center justify-center text-cream text-xs font-semibold">PK</div>
+          <div class="w-11 h-11 rounded-full ring-2 ring-navy bg-ink flex items-center justify-center text-cream text-xs font-semibold">AR</div>
+          <div class="w-11 h-11 rounded-full ring-2 ring-navy bg-blue flex items-center justify-center text-cream text-xs font-semibold">50+</div>
+        </div>
+        <p class="divider-flourish text-blueLight text-xs tracking-[0.3em] uppercase font-medium mb-5 justify-center"><span>In patients' words</span></p>
+        <h2 class="font-display text-4xl lg:text-5xl -tracking-[0.02em] text-cream">Trusted across Norfolk</h2>
+      </div>
+
+      <div data-testimonial-carousel class="mt-16 reveal">
+        <div class="overflow-hidden">
+          <div data-carousel-track class="flex transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]">
+
+            <figure class="w-full shrink-0 text-center px-4 sm:px-12">
+              <svg class="mx-auto w-9 h-9 text-blueLight/70" viewBox="0 0 32 32" fill="currentColor"><path d="M9.4 20.8c-2.1 0-3.8-.7-5-2.1C3.1 17.3 2.5 15.5 2.5 13.3c0-3 1-5.6 3-7.9 2-2.3 4.5-3.9 7.5-4.9l1 2.3c-2.2.8-4 2-5.3 3.5-1.3 1.5-2 3-2.1 4.6.5-.2 1.1-.3 1.7-.3 1.7 0 3.1.6 4.2 1.7 1.1 1.1 1.7 2.5 1.7 4.1 0 1.7-.6 3.1-1.7 4.2-1.1 1.1-2.5 1.7-4.1 1.7zm16.6 0c-2.1 0-3.8-.7-5-2.1-1.3-1.4-1.9-3.2-1.9-5.4 0-3 1-5.6 3-7.9 2-2.3 4.5-3.9 7.5-4.9l1 2.3c-2.2.8-4 2-5.3 3.5-1.3 1.5-2 3-2.1 4.6.5-.2 1.1-.3 1.7-.3 1.7 0 3.1.6 4.2 1.7 1.1 1.1 1.7 2.5 1.7 4.1 0 1.7-.6 3.1-1.7 4.2-1.1 1.1-2.5 1.7-4.1 1.7z"/></svg>
+              <blockquote class="mt-6 font-display text-xl sm:text-2xl leading-relaxed text-cream/95">
+                "I'd avoided the dentist for years out of nerves. The team here talked me through everything before it happened, not after. I actually don't dread it anymore."
+              </blockquote>
+              <figcaption class="mt-6 text-sm text-blueLight tracking-wide">Sarah H. — King's Lynn</figcaption>
+            </figure>
+
+            <figure class="w-full shrink-0 text-center px-4 sm:px-12">
+              <svg class="mx-auto w-9 h-9 text-blueLight/70" viewBox="0 0 32 32" fill="currentColor"><path d="M9.4 20.8c-2.1 0-3.8-.7-5-2.1C3.1 17.3 2.5 15.5 2.5 13.3c0-3 1-5.6 3-7.9 2-2.3 4.5-3.9 7.5-4.9l1 2.3c-2.2.8-4 2-5.3 3.5-1.3 1.5-2 3-2.1 4.6.5-.2 1.1-.3 1.7-.3 1.7 0 3.1.6 4.2 1.7 1.1 1.1 1.7 2.5 1.7 4.1 0 1.7-.6 3.1-1.7 4.2-1.1 1.1-2.5 1.7-4.1 1.7zm16.6 0c-2.1 0-3.8-.7-5-2.1-1.3-1.4-1.9-3.2-1.9-5.4 0-3 1-5.6 3-7.9 2-2.3 4.5-3.9 7.5-4.9l1 2.3c-2.2.8-4 2-5.3 3.5-1.3 1.5-2 3-2.1 4.6.5-.2 1.1-.3 1.7-.3 1.7 0 3.1.6 4.2 1.7 1.1 1.1 1.7 2.5 1.7 4.1 0 1.7-.6 3.1-1.7 4.2-1.1 1.1-2.5 1.7-4.1 1.7z"/></svg>
+              <blockquote class="mt-6 font-display text-xl sm:text-2xl leading-relaxed text-cream/95">
+                "Chipped a tooth on a Saturday morning and they saw me within the hour. Calm, professional, and it's all just part of my plan."
+              </blockquote>
+              <figcaption class="mt-6 text-sm text-blueLight tracking-wide">Michael T. — Gaywood</figcaption>
+            </figure>
+
+            <figure class="w-full shrink-0 text-center px-4 sm:px-12">
+              <svg class="mx-auto w-9 h-9 text-blueLight/70" viewBox="0 0 32 32" fill="currentColor"><path d="M9.4 20.8c-2.1 0-3.8-.7-5-2.1C3.1 17.3 2.5 15.5 2.5 13.3c0-3 1-5.6 3-7.9 2-2.3 4.5-3.9 7.5-4.9l1 2.3c-2.2.8-4 2-5.3 3.5-1.3 1.5-2 3-2.1 4.6.5-.2 1.1-.3 1.7-.3 1.7 0 3.1.6 4.2 1.7 1.1 1.1 1.7 2.5 1.7 4.1 0 1.7-.6 3.1-1.7 4.2-1.1 1.1-2.5 1.7-4.1 1.7zm16.6 0c-2.1 0-3.8-.7-5-2.1-1.3-1.4-1.9-3.2-1.9-5.4 0-3 1-5.6 3-7.9 2-2.3 4.5-3.9 7.5-4.9l1 2.3c-2.2.8-4 2-5.3 3.5-1.3 1.5-2 3-2.1 4.6.5-.2 1.1-.3 1.7-.3 1.7 0 3.1.6 4.2 1.7 1.1 1.1 1.7 2.5 1.7 4.1 0 1.7-.6 3.1-1.7 4.2-1.1 1.1-2.5 1.7-4.1 1.7z"/></svg>
+              <blockquote class="mt-6 font-display text-xl sm:text-2xl leading-relaxed text-cream/95">
+                "Being on the Gold plan means I never think twice about booking a hygiene visit — it's already covered. Every single appointment has run on time too."
+              </blockquote>
+              <figcaption class="mt-6 text-sm text-blueLight tracking-wide">Priya K. — South Lynn</figcaption>
+            </figure>
+
+            <figure class="w-full shrink-0 text-center px-4 sm:px-12">
+              <svg class="mx-auto w-9 h-9 text-blueLight/70" viewBox="0 0 32 32" fill="currentColor"><path d="M9.4 20.8c-2.1 0-3.8-.7-5-2.1C3.1 17.3 2.5 15.5 2.5 13.3c0-3 1-5.6 3-7.9 2-2.3 4.5-3.9 7.5-4.9l1 2.3c-2.2.8-4 2-5.3 3.5-1.3 1.5-2 3-2.1 4.6.5-.2 1.1-.3 1.7-.3 1.7 0 3.1.6 4.2 1.7 1.1 1.1 1.7 2.5 1.7 4.1 0 1.7-.6 3.1-1.7 4.2-1.1 1.1-2.5 1.7-4.1 1.7zm16.6 0c-2.1 0-3.8-.7-5-2.1-1.3-1.4-1.9-3.2-1.9-5.4 0-3 1-5.6 3-7.9 2-2.3 4.5-3.9 7.5-4.9l1 2.3c-2.2.8-4 2-5.3 3.5-1.3 1.5-2 3-2.1 4.6.5-.2 1.1-.3 1.7-.3 1.7 0 3.1.6 4.2 1.7 1.1 1.1 1.7 2.5 1.7 4.1 0 1.7-.6 3.1-1.7 4.2-1.1 1.1-2.5 1.7-4.1 1.7z"/></svg>
+              <blockquote class="mt-6 font-display text-xl sm:text-2xl leading-relaxed text-cream/95">
+                "My daughter was terrified of dentists after a bad experience elsewhere. She now asks when her next check-up is. That tells you everything."
+              </blockquote>
+              <figcaption class="mt-6 text-sm text-blueLight tracking-wide">Anna R. — North Wootton</figcaption>
+            </figure>
+
+          </div>
+        </div>
+
+        <div class="mt-10 flex items-center justify-center gap-6">
+          <button data-carousel-prev aria-label="Previous testimonial" class="w-11 h-11 rounded-full flex items-center justify-center text-cream shadow-[inset_0_0_0_1px_rgba(244,241,238,0.35)] hover:shadow-[inset_0_0_0_1px_rgba(244,241,238,0.7)] transition-shadow duration-300">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div data-carousel-dots class="flex items-center gap-2 text-cream"></div>
+          <button data-carousel-next aria-label="Next testimonial" class="w-11 h-11 rounded-full flex items-center justify-center text-cream shadow-[inset_0_0_0_1px_rgba(244,241,238,0.35)] hover:shadow-[inset_0_0_0_1px_rgba(244,241,238,0.7)] transition-shadow duration-300">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="relative py-16 lg:py-20 mesh-bg-light overflow-hidden">
+    <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center reveal relative z-10">
+      <h2 class="font-display text-4xl lg:text-5xl -tracking-[0.02em] text-navy leading-tight">We'd love to welcome you</h2>
+      <p class="mt-5 text-ink/75 leading-[1.7] max-w-xl mx-auto">Getting started is easy — just send us a quick enquiry and we'll help you find the right plan and a time that suits you. No pressure, just a friendly chat.</p>
+      <div class="mt-9 flex flex-wrap items-center justify-center gap-4">
+        <a href="index.html#plans" class="btn btn-primary">View Membership Plans</a>
+        <a href="tel:+441553773302" class="phone-number btn btn-outline-navy">Call 01553 773302</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="navy-atmosphere grain text-cream/80 pt-20 pb-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div>
+        <a href="index.html" class="inline-flex items-center">
+          <img src="./assets/img/logo-horizontal.png" alt="Tuesday Market Dental Practice" class="h-11 w-auto opacity-95" style="filter: brightness(0) invert(1);" />
+        </a>
+        <p class="mt-5 text-sm leading-relaxed text-cream/60 max-w-xs">Considered, gentle dentistry in the heart of King's Lynn — a plan-only practice, new members always welcome.</p>
+        <div class="mt-5 flex items-center gap-4 text-cream/60">
+          <a href="#" aria-label="Instagram" class="hover:text-cream transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="hover:text-cream transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 8.5h2V5.3c-.35-.05-1.55-.15-2.95-.15-2.92 0-4.92 1.78-4.92 5.05V13H6.5v3.5h2.63V23h3.6v-6.5h2.73l.43-3.5h-3.16v-2.4c0-1.01.28-1.6 1.77-1.6z" fill="currentColor"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-xs tracking-[0.2em] uppercase text-blueLight mb-5">Explore</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="index.html" class="hover:text-cream transition-colors">Home</a></li>
+          <li><a href="about.html" class="hover:text-cream transition-colors">About &amp; the team</a></li>
+          <li><a href="services.html" class="hover:text-cream transition-colors">Services</a></li>
+          <li><a href="index.html#plans" class="hover:text-cream transition-colors">Membership plans</a></li>
+          <li><a href="index.html#testimonials" class="hover:text-cream transition-colors">Testimonials</a></li>
+          <li><a href="contact.html" class="hover:text-cream transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xs tracking-[0.2em] uppercase text-blueLight mb-5">Visit us</h3>
+        <address class="not-italic text-sm leading-relaxed text-cream/70">
+          15 Tuesday Market Place<br />
+          King's Lynn<br />
+          Norfolk, PE30 1JN
+        </address>
+        <p class="mt-4 text-sm"><a href="tel:+441553773302" class="phone-number hover:text-cream transition-colors">01553 773302</a></p>
+        <p class="mt-1 text-sm"><a href="mailto:tuesdaymarketpractice@gmail.com" class="hover:text-cream transition-colors">tuesdaymarketpractice@gmail.com</a></p>
+      </div>
+
+      <div>
+        <h3 class="text-xs tracking-[0.2em] uppercase text-blueLight mb-5">Opening hours</h3>
+        <ul class="space-y-2 text-sm text-cream/70">
+          <li class="flex justify-between gap-6"><span>Monday – Friday</span><span>9:00am – 5:00pm</span></li>
+          <li class="flex justify-between gap-6"><span>Saturday – Sunday</span><span>Closed</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-cream/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cream/50">
+      <p>© <span data-year></span> Tuesday Market Dental Practice. All rights reserved.</p>
+      <p>General Dental Council registered · PE30 1JN</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/js/site.js"></script>
+</body>
+</html>

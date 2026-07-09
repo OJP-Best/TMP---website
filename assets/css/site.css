@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --navy: #1a2b5d;
+  --navy-deep: #101b42;
+  --cream: #f4f1ee;
+  --white: #ffffff;
+  --brass: #a8875a;
+  --brass-light: #c9ac7e;
+  --ink: #22304f;
+  --blue: #1a2b5d;
+  --blue-light: #9aa5cc;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "Inter", sans-serif;
+}
+
+.font-display {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+}
+
+/* Arch signature motif — echoes the sash windows & doorways of King's Lynn's
+   Tuesday Market Place. Used on image frames, cards, and section dividers. */
+.arch {
+  border-radius: 50% 50% 0 0 / clamp(2.5rem, 12vw, 6rem) clamp(2.5rem, 12vw, 6rem) 0 0;
+  overflow: hidden;
+}
+
+.arch-sm {
+  border-radius: 50% 50% 0 0 / 1.75rem 1.75rem 0 0;
+  overflow: hidden;
+}
+
+.arch-frame {
+  position: relative;
+}
+
+.arch-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(244, 241, 238, 0.35);
+  pointer-events: none;
+}
+
+/* Photographic treatment: navy duotone + grade, per brand system */
+.photo-treated {
+  position: relative;
+}
+
+.photo-treated img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.92) contrast(1.02);
+}
+
+.photo-treated::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(26, 43, 93, 0) 40%, rgba(16, 27, 66, 0.55) 100%),
+    linear-gradient(0deg, rgba(26, 43, 93, 0.18), rgba(26, 43, 93, 0.18));
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+/* Grain texture for depth on dark surfaces */
+.grain {
+  position: relative;
+  isolation: isolate;
+}
+
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+/* Radial atmosphere for navy sections */
+.navy-atmosphere {
+  background-color: var(--navy);
+  background-image: radial-gradient(circle at 15% 20%, rgba(26, 43, 93, 0.28), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(154, 165, 204, 0.14), transparent 50%);
+}
+
+/* Soft gradient-mesh atmosphere for light sections — replaces photography with abstract depth */
+.mesh-bg-light {
+  background-color: var(--cream);
+  background-image: radial-gradient(circle at 88% 12%, rgba(26, 43, 93, 0.16), transparent 45%),
+    radial-gradient(circle at 6% 90%, rgba(26, 43, 93, 0.1), transparent 50%);
+}
+
+/* Crisp white hero atmosphere — sharper and sleeker than the cream mesh */
+.mesh-bg-hero {
+  background-color: #ffffff;
+  background-image: radial-gradient(circle at 85% 8%, rgba(26, 43, 93, 0.12), transparent 45%),
+    radial-gradient(circle at 4% 96%, rgba(26, 43, 93, 0.07), transparent 50%);
+}
+
+/* Glass cards — frosted panels used in place of photo cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 1.5rem;
+  box-shadow: 0 1px 2px rgba(16, 27, 66, 0.05), 0 20px 40px -22px rgba(16, 27, 66, 0.2);
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(16, 27, 66, 0.08), 0 28px 48px -20px rgba(16, 27, 66, 0.26);
+}
+
+/* Hairline divider with center diamond — a quiet Georgian typographic flourish */
+.divider-flourish {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.divider-flourish::before,
+.divider-flourish::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.25;
+}
+
+.divider-flourish .diamond {
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+  opacity: 0.5;
+  transform: rotate(45deg);
+}
+
+/* Layered, color-tinted shadows */
+.shadow-navy-sm {
+  box-shadow: 0 1px 2px rgba(16, 27, 66, 0.06), 0 4px 12px rgba(16, 27, 66, 0.06);
+}
+
+.shadow-navy-md {
+  box-shadow: 0 2px 4px rgba(16, 27, 66, 0.07), 0 12px 32px -8px rgba(16, 27, 66, 0.22);
+}
+
+.shadow-navy-lg {
+  box-shadow: 0 4px 8px rgba(16, 27, 66, 0.08), 0 24px 48px -12px rgba(16, 27, 66, 0.32);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  letter-spacing: 0.01em;
+  padding: 0.9rem 1.75rem;
+  border-radius: 999px;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary {
+  background: var(--navy);
+  color: var(--cream);
+  box-shadow: 0 1px 2px rgba(16, 27, 66, 0.15), 0 10px 24px -8px rgba(16, 27, 66, 0.45);
+}
+
+.btn-primary:hover {
+  background: var(--navy-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(16, 27, 66, 0.18), 0 16px 32px -8px rgba(16, 27, 66, 0.5);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-light {
+  background: var(--cream);
+  color: var(--navy);
+  box-shadow: 0 1px 2px rgba(16, 27, 66, 0.12), 0 10px 24px -8px rgba(16, 27, 66, 0.4);
+}
+
+.btn-light:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(16, 27, 66, 0.16), 0 16px 32px -8px rgba(16, 27, 66, 0.45);
+}
+
+.btn-light:active {
+  transform: translateY(0);
+}
+
+.btn-blue {
+  background: var(--blue);
+  color: #ffffff;
+  box-shadow: 0 1px 2px rgba(26, 43, 93, 0.2), 0 12px 28px -8px rgba(26, 43, 93, 0.5);
+}
+
+.btn-blue:hover {
+  background: var(--navy-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(26, 43, 93, 0.25), 0 18px 36px -8px rgba(26, 43, 93, 0.55);
+}
+
+.btn-blue:active {
+  transform: translateY(0);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--cream);
+  box-shadow: inset 0 0 0 1px rgba(244, 241, 238, 0.4);
+}
+
+.btn-ghost:hover {
+  background: rgba(244, 241, 238, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(244, 241, 238, 0.7);
+  transform: translateY(-2px);
+}
+
+.btn-outline-navy {
+  background: transparent;
+  color: var(--blue);
+  box-shadow: inset 0 0 0 1.5px rgba(26, 43, 93, 0.45);
+}
+
+.btn-outline-navy:hover {
+  background: rgba(26, 43, 93, 0.06);
+  box-shadow: inset 0 0 0 1.5px rgba(26, 43, 93, 0.75);
+  transform: translateY(-2px);
+}
+
+/* Focus visibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+
+/* Header gains depth once the page has scrolled past the top */
+header[data-header] {
+  box-shadow: 0 1px 0 rgba(26, 43, 93, 0), 0 12px 24px -16px rgba(26, 43, 93, 0);
+  transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease;
+}
+
+header[data-header].is-scrolled {
+  box-shadow: 0 1px 0 rgba(26, 43, 93, 0.06), 0 12px 24px -16px rgba(26, 43, 93, 0.35);
+}
+
+/* Nav link underline sweep */
+.nav-link {
+  position: relative;
+  color: var(--ink);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 1px;
+  width: 100%;
+  background: var(--blue);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Card lift */
+.card-lift {
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-lift:hover {
+  transform: translateY(-6px);
+}
+
+/* Marquee for credential strip */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+/* Fades the marquee track to transparent at both edges for a seamless ticker */
+.marquee-fade {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
+/* Hero scroll cue — gentle invitation to keep scrolling */
+.scroll-cue {
+  animation: scroll-cue-bounce 2.4s ease-in-out infinite;
+}
+
+@keyframes scroll-cue-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue {
+    animation: none;
+  }
+}
+
+/* Mobile nav */
+.mobile-nav {
+  transform: translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-nav.is-open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
