@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap");
 
 :root {
-  --navy: #1a2b5d;
-  --navy-deep: #101b42;
+  --navy: #14225c;
+  --navy-deep: #0b1642;
   --cream: #f4f1ee;
   --white: #ffffff;
   --brass: #a8875a;
   --brass-light: #c9ac7e;
+  --gold: #b0925f;
   --ink: #22304f;
-  --blue: #1a2b5d;
-  --blue-light: #9aa5cc;
+  --blue: #14225c;
+  --blue-light: #a7b4ee;
 }
 
 * {
@@ -73,8 +74,8 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(26, 43, 93, 0) 40%, rgba(16, 27, 66, 0.55) 100%),
-    linear-gradient(0deg, rgba(26, 43, 93, 0.18), rgba(26, 43, 93, 0.18));
+  background: linear-gradient(180deg, rgba(20, 34, 92, 0) 40%, rgba(11, 22, 66, 0.55) 100%),
+    linear-gradient(0deg, rgba(20, 34, 92, 0.18), rgba(20, 34, 92, 0.18));
   mix-blend-mode: multiply;
   pointer-events: none;
 }
@@ -99,22 +100,22 @@ body {
 /* Radial atmosphere for navy sections */
 .navy-atmosphere {
   background-color: var(--navy);
-  background-image: radial-gradient(circle at 15% 20%, rgba(26, 43, 93, 0.28), transparent 45%),
-    radial-gradient(circle at 85% 80%, rgba(154, 165, 204, 0.14), transparent 50%);
+  background-image: radial-gradient(circle at 15% 20%, rgba(20, 34, 92, 0.28), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(167, 180, 238, 0.14), transparent 50%);
 }
 
 /* Soft gradient-mesh atmosphere for light sections — replaces photography with abstract depth */
 .mesh-bg-light {
   background-color: var(--cream);
-  background-image: radial-gradient(circle at 88% 12%, rgba(26, 43, 93, 0.16), transparent 45%),
-    radial-gradient(circle at 6% 90%, rgba(26, 43, 93, 0.1), transparent 50%);
+  background-image: radial-gradient(circle at 88% 12%, rgba(20, 34, 92, 0.16), transparent 45%),
+    radial-gradient(circle at 6% 90%, rgba(20, 34, 92, 0.1), transparent 50%);
 }
 
 /* Crisp white hero atmosphere — sharper and sleeker than the cream mesh */
 .mesh-bg-hero {
   background-color: #ffffff;
-  background-image: radial-gradient(circle at 85% 8%, rgba(26, 43, 93, 0.12), transparent 45%),
-    radial-gradient(circle at 4% 96%, rgba(26, 43, 93, 0.07), transparent 50%);
+  background-image: radial-gradient(circle at 85% 8%, rgba(20, 34, 92, 0.12), transparent 45%),
+    radial-gradient(circle at 4% 96%, rgba(20, 34, 92, 0.07), transparent 50%);
 }
 
 /* Glass cards — frosted panels used in place of photo cards */
@@ -124,13 +125,14 @@ body {
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 1.5rem;
-  box-shadow: 0 1px 2px rgba(16, 27, 66, 0.05), 0 20px 40px -22px rgba(16, 27, 66, 0.2);
+  box-shadow: 0 1px 2px rgba(11, 22, 66, 0.05), 0 20px 40px -22px rgba(11, 22, 66, 0.2);
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 8px rgba(16, 27, 66, 0.08), 0 28px 48px -20px rgba(16, 27, 66, 0.26);
+  box-shadow: 0 4px 8px rgba(11, 22, 66, 0.08), 0 28px 48px -20px rgba(11, 22, 66, 0.26),
+    inset 0 0 0 1px rgba(176, 146, 95, 0.35);
 }
 
 /* Hairline divider with center diamond — a quiet Georgian typographic flourish */
@@ -145,8 +147,14 @@ body {
   content: "";
   flex: 1;
   height: 1px;
-  background: currentColor;
-  opacity: 0.25;
+}
+
+.divider-flourish::before {
+  background: linear-gradient(90deg, transparent, var(--gold));
+}
+
+.divider-flourish::after {
+  background: linear-gradient(90deg, var(--gold), transparent);
 }
 
 .divider-flourish .diamond {
@@ -159,15 +167,15 @@ body {
 
 /* Layered, color-tinted shadows */
 .shadow-navy-sm {
-  box-shadow: 0 1px 2px rgba(16, 27, 66, 0.06), 0 4px 12px rgba(16, 27, 66, 0.06);
+  box-shadow: 0 1px 2px rgba(11, 22, 66, 0.06), 0 4px 12px rgba(11, 22, 66, 0.06);
 }
 
 .shadow-navy-md {
-  box-shadow: 0 2px 4px rgba(16, 27, 66, 0.07), 0 12px 32px -8px rgba(16, 27, 66, 0.22);
+  box-shadow: 0 2px 4px rgba(11, 22, 66, 0.07), 0 12px 32px -8px rgba(11, 22, 66, 0.22);
 }
 
 .shadow-navy-lg {
-  box-shadow: 0 4px 8px rgba(16, 27, 66, 0.08), 0 24px 48px -12px rgba(16, 27, 66, 0.32);
+  box-shadow: 0 4px 8px rgba(11, 22, 66, 0.08), 0 24px 48px -12px rgba(11, 22, 66, 0.32);
 }
 
 /* Buttons */
@@ -189,13 +197,14 @@ body {
 .btn-primary {
   background: var(--navy);
   color: var(--cream);
-  box-shadow: 0 1px 2px rgba(16, 27, 66, 0.15), 0 10px 24px -8px rgba(16, 27, 66, 0.45);
+  box-shadow: 0 1px 2px rgba(11, 22, 66, 0.15), 0 10px 24px -8px rgba(11, 22, 66, 0.45);
 }
 
 .btn-primary:hover {
   background: var(--navy-deep);
   transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(16, 27, 66, 0.18), 0 16px 32px -8px rgba(16, 27, 66, 0.5);
+  box-shadow: 0 2px 4px rgba(11, 22, 66, 0.18), 0 16px 32px -8px rgba(11, 22, 66, 0.5),
+    0 0 0 1px rgba(176, 146, 95, 0.45);
 }
 
 .btn-primary:active {
@@ -205,13 +214,13 @@ body {
 .btn-light {
   background: var(--cream);
   color: var(--navy);
-  box-shadow: 0 1px 2px rgba(16, 27, 66, 0.12), 0 10px 24px -8px rgba(16, 27, 66, 0.4);
+  box-shadow: 0 1px 2px rgba(11, 22, 66, 0.12), 0 10px 24px -8px rgba(11, 22, 66, 0.4);
 }
 
 .btn-light:hover {
   background: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(16, 27, 66, 0.16), 0 16px 32px -8px rgba(16, 27, 66, 0.45);
+  box-shadow: 0 2px 4px rgba(11, 22, 66, 0.16), 0 16px 32px -8px rgba(11, 22, 66, 0.45);
 }
 
 .btn-light:active {
@@ -221,13 +230,14 @@ body {
 .btn-blue {
   background: var(--blue);
   color: #ffffff;
-  box-shadow: 0 1px 2px rgba(26, 43, 93, 0.2), 0 12px 28px -8px rgba(26, 43, 93, 0.5);
+  box-shadow: 0 1px 2px rgba(20, 34, 92, 0.2), 0 12px 28px -8px rgba(20, 34, 92, 0.5);
 }
 
 .btn-blue:hover {
   background: var(--navy-deep);
   transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(26, 43, 93, 0.25), 0 18px 36px -8px rgba(26, 43, 93, 0.55);
+  box-shadow: 0 2px 4px rgba(20, 34, 92, 0.25), 0 18px 36px -8px rgba(20, 34, 92, 0.55),
+    0 0 0 1px rgba(176, 146, 95, 0.45);
 }
 
 .btn-blue:active {
@@ -249,12 +259,12 @@ body {
 .btn-outline-navy {
   background: transparent;
   color: var(--blue);
-  box-shadow: inset 0 0 0 1.5px rgba(26, 43, 93, 0.45);
+  box-shadow: inset 0 0 0 1.5px rgba(20, 34, 92, 0.45);
 }
 
 .btn-outline-navy:hover {
-  background: rgba(26, 43, 93, 0.06);
-  box-shadow: inset 0 0 0 1.5px rgba(26, 43, 93, 0.75);
+  background: rgba(20, 34, 92, 0.06);
+  box-shadow: inset 0 0 0 1.5px rgba(20, 34, 92, 0.75);
   transform: translateY(-2px);
 }
 
@@ -264,18 +274,18 @@ button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid var(--blue);
+  outline: 2px solid var(--gold);
   outline-offset: 3px;
 }
 
 /* Header gains depth once the page has scrolled past the top */
 header[data-header] {
-  box-shadow: 0 1px 0 rgba(26, 43, 93, 0), 0 12px 24px -16px rgba(26, 43, 93, 0);
+  box-shadow: 0 1px 0 rgba(20, 34, 92, 0), 0 12px 24px -16px rgba(20, 34, 92, 0);
   transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease;
 }
 
 header[data-header].is-scrolled {
-  box-shadow: 0 1px 0 rgba(26, 43, 93, 0.06), 0 12px 24px -16px rgba(26, 43, 93, 0.35);
+  box-shadow: 0 1px 0 rgba(20, 34, 92, 0.06), 0 12px 24px -16px rgba(20, 34, 92, 0.35);
 }
 
 /* Nav link underline sweep */
@@ -291,7 +301,7 @@ header[data-header].is-scrolled {
   bottom: -4px;
   height: 1px;
   width: 100%;
-  background: var(--blue);
+  background: var(--gold);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -379,6 +389,105 @@ header[data-header].is-scrolled {
 
 @media (prefers-reduced-motion: reduce) {
   .scroll-cue {
+    animation: none;
+  }
+}
+
+/* Custom text selection — brand navy & gold instead of the browser default */
+::selection {
+  background: var(--gold);
+  color: var(--navy-deep);
+}
+
+/* Custom scrollbar — quiet, brand-toned rail instead of the OS default */
+html {
+  scrollbar-color: var(--navy) var(--cream);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy);
+  border-radius: 999px;
+  border: 3px solid var(--cream);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--navy-deep);
+}
+
+/* Steady digit width while stat counters animate — no layout jitter */
+[data-count-to] {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hero entrance — a quiet, choreographed rise on first paint */
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-in {
+  opacity: 0;
+  animation: hero-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-in-1 {
+  animation-delay: 0.05s;
+}
+.hero-in-2 {
+  animation-delay: 0.16s;
+}
+.hero-in-3 {
+  animation-delay: 0.27s;
+}
+.hero-in-4 {
+  animation-delay: 0.38s;
+}
+.hero-in-5 {
+  animation-delay: 0.49s;
+}
+.hero-in-6 {
+  animation-delay: 0.6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-in {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+/* Ambient float — a slow, subtle drift on the hero's floating stat card */
+@keyframes gentle-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.float-badge {
+  animation: gentle-float 5.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float-badge {
     animation: none;
   }
 }
